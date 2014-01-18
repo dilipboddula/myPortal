@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 11, 2014 2:09:12 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.awards.Awards" table="AWARDS">
+        <id name="awardId" type="int">
+            <column name="AWARDID" />
+            <generator class="native" />
+        </id>
+        <property name="scopeId" type="int">
+            <column name="SCOPEID" />
+        </property>
+        <property name="nominatorId" type="int">
+            <column name="NOMINATORID" />
+        </property>
+        <property name="nomineeId" type="int">
+            <column name="NOMINEEID" />
+        </property>
+        <property name="coreValueId" type="int">
+            <column name="COREVALUEID" />
+        </property>
+        <property name="reason" type="java.lang.String">
+            <column name="REASON" />
+        </property>
+        <property name="coreValue" type="java.lang.String">
+            <column name="COREVALUE" />
+        </property>
+        <property name="nominatorName" type="java.lang.String">
+            <column name="NOMINATORNAME" />
+        </property>
+        <property name="nomineeName" type="java.lang.String">
+            <column name="NOMINEENAME" />
+        </property>
+        <property name="impact" type="java.lang.String">
+            <column name="IMPACT" />
+        </property>
+    </class>
+</hibernate-mapping>

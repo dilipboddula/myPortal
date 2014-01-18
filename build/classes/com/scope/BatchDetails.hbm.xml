@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 7, 2014 4:45:45 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.scope.BatchDetails" table="BATCHDETAILS">
+        <id name="scopeId" type="int">
+            <column name="SCOPEID" />
+            <generator class="native" />
+        </id>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        <property name="batch" type="java.lang.String">
+            <column name="BATCH" />
+        </property>
+        <property name="cycle" type="int">
+            <column name="CYCLE" />
+        </property>
+        <property name="stage" type="int">
+            <column name="STAGE" />
+        </property>
+        <property name="fileName" type="java.lang.String">
+            <column name="FILENAME" />
+        </property>
+        <property name="updateId" type="int">
+            <column name="UPDATEID" />
+        </property>
+    </class>
+</hibernate-mapping>

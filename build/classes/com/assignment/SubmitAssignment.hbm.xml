@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 14, 2014 1:53:05 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.assignment.SubmitAssignment" table="SUBMITASSIGNMENT">
+        <id name="submitId" type="int">
+            <column name="SUBMITID" />
+            <generator class="native" />
+        </id>
+        <property name="scopeId" type="int">
+            <column name="SCOPEID" />
+        </property>
+        <property name="assignmentId" type="int">
+            <column name="ASSIGNMENTID" />
+        </property>
+        <property name="member1Id" type="int">
+            <column name="MEMBER1ID" />
+        </property>
+        <property name="member2Id" type="int">
+            <column name="MEMBER2ID" />
+        </property>
+        <property name="member1Name" type="java.lang.String">
+            <column name="MEMBER1NAME" />
+        </property>
+        <property name="member2Name" type="java.lang.String">
+            <column name="MEMBER2NAME" />
+        </property>
+        <property name="projectName" type="java.lang.String">
+            <column name="PROJECTNAME" />
+        </property>
+        <property name="projectDescription" type="java.lang.String">
+            <column name="PROJECTDESCRIPTION" />
+        </property>
+        <property name="fileName" type="java.lang.String">
+            <column name="FILENAME" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="URL" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

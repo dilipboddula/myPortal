@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 12, 2014 5:12:58 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.admin.Admin" table="ADMIN">
+        <id name="adminId" type="int">
+            <column name="ADMINID" />
+            <generator class="native" />
+        </id>
+        <property name="adminUserName" type="java.lang.String">
+            <column name="ADMINUSERNAME" />
+        </property>
+        <property name="adminPassword" type="java.lang.String">
+            <column name="ADMINPASSWORD" />
+        </property>
+        <property name="adminRole" type="java.lang.String">
+            <column name="ADMINROLE" />
+        </property>
+        <property name="scopeId" type="int">
+            <column name="SCOPEID" />
+        </property>
+        <property name="uploadTrigger" type="int">
+            <column name="UPLOADTRIGGER" />
+        </property>
+    </class>
+</hibernate-mapping>

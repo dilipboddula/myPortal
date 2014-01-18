@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 14, 2014 5:31:29 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.voteForPoc.Votes" table="VOTES">
+        <id name="voteId" type="int">
+            <column name="VOTEID" />
+            <generator class="native" />
+        </id>
+        <property name="voteCompId" type="int">
+            <column name="VOTECOMPID" />
+        </property>
+        <property name="scopeId" type="int">
+            <column name="SCOPEID" />
+        </property>
+        <property name="nominatorId" type="int">
+            <column name="NOMINATORID" />
+        </property>
+        <property name="nominatorName" type="java.lang.String">
+            <column name="NOMINATORNAME" />
+        </property>
+        <property name="nomineeId" type="int">
+            <column name="NOMINEEID" />
+        </property>
+        <property name="nomineeName" type="java.lang.String">
+            <column name="NOMINEENAME" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="COMMENT" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 14, 2014 7:51:32 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.notifications.Notification" table="NOTIFICATION">
+        <id name="notificationId" type="int">
+            <column name="NOTIFICATIONID" />
+            <generator class="native" />
+        </id>
+        <property name="scopeId" type="int">
+            <column name="SCOPEID" />
+        </property>
+        <property name="itemName" type="java.lang.String">
+            <column name="ITEMNAME" />
+        </property>
+        <property name="defaultTemplate" type="java.lang.String">
+            <column name="DEFAULTTEMPLATE" />
+        </property>
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.password">root</property>
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/training</property>
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.show_sql">true</property>
+  <mapping resource="com/scope/BatchDetails.hbm.xml"/>
+  <mapping resource="com/scope/NamesBean.hbm.xml"/>
+  <mapping resource="com/users/SapientUsers.hbm.xml"/>
+  <mapping resource="com/awards/Awards.hbm.xml"/>
+  <mapping resource="com/admin/Admin.hbm.xml"/>
+  <mapping resource="com/voteForPoc/Votes.hbm.xml"/>
+  <mapping resource="com/assignment/Assignment.hbm.xml"/>
+  <mapping resource="com/assignment/SubmitAssignment.hbm.xml"/>
+  <mapping resource="com/notifications/Notification.hbm.xml"/>
+ </session-factory>
+</hibernate-configuration>
